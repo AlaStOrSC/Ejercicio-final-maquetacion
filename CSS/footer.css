@@ -1,7 +1,7 @@
-/* ---- FOOTER ---- */
+/* ---- FOOTER ---- */          
 
 .footer {
-    background: rgba(50, 30, 20, 0.9);
+    background: rgba(50, 30, 20, 0.9);                 /* ---- usamos la clase footer en lugar de la etiqueta por si en un futuro quisieramos a;adir otro tipo de footers ---- */   
     color: #e0c097;
     text-align: center;
     padding: 1rem;
