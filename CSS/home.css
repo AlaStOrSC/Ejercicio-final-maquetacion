@@ -1,0 +1,435 @@
+/* -------------------------- HOME ------------------------------ */
+* {
+    box-sizing: border-box;
+}
+
+/* ---- BACKGROUND IMG ---- */
+.main__background {
+    background-image: url('../images/woodbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0;
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+/* ---- MAIN ---- */
+
+/* ---- BANNER ---- */
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+.banner__image {
+    clip-path: inset(0% 0% 0% 0% round 15px);
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: inherit;
+    padding: 0;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(255, 215, 0, 0.5);
+
+}
+
+.banner__button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #ffd680, #ffac33);
+    color: #2e1b15;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transition: all 0.4s ease-in-out;
+    animation: Magic 2s infinite alternate;
+    white-space: nowrap;
+}
+
+.banner__button:hover {
+    background: linear-gradient(45deg, #ffac33, #ffd700);
+    box-shadow: 0 0 25px #FFD700;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+
+
+
+/* ---- ARTICULOS DESTACADOS ---- */
+.featured {
+    text-align: center;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffd680;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    margin-bottom: 2.5rem;
+    max-width: 100%;
+}
+
+.section__titlebis {
+ 
+    margin-bottom: 0;
+    margin-top: 3.5rem;
+}
+
+.section__title span {
+    display: inline-block;
+    animation: colorSwap 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.section__title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.section__title span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.section__title span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.section__title span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.section__title span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.section__title span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.section__title span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.section__title span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.section__title span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.section__title span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.section__title span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.section__title span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.section__title span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.section__title span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.section__title span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.section__title span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.section__title span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.section__title span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.section__title span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+
+
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    background-image: url('../images/puente.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    transition: transform 0.1s ease-out;
+    background-attachment: scroll;
+    animation: parallaxImitation 10s linear infinite alternate;
+}
+
+.separator {
+    width: 80%;
+    height: 4px;
+    margin: 40px auto;
+    background: linear-gradient(to right, rgba(255, 215, 0, 0.2), #ffd700, rgba(255, 215, 0, 0.2));
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+
+
+/*  ---- SWIPPER ---- */
+
+
+.swiper {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper__container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+
+
+.swiper__slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+
+}
+
+
+
+.swiper__title {
+    font-size: 1.3rem;
+    color: #ffd680;
+    margin-bottom: 25px;
+}
+
+.swiper__description {
+    font-size: 1rem;
+    color: #e0c097;
+}
+
+
+
+.swiper__item {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+
+
+.swiper__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    object-fit: contain;
+}
+
+
+
+
+
+
+/*  ---------- KEYFRAMES ---------- */
+@keyframes colorSwap {
+    0% {
+        opacity: 0;
+        color: #fff;
+    }
+
+    50% {
+        color: #800480;
+    }
+
+    100% {
+        opacity: 1;
+        color: #ffd680;
+    }
+
+}
+
+@keyframes Magic {
+    from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+
+    to {
+        box-shadow: 0 0 30px rgb(245, 247, 244);
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    @keyframes parallaxImitation {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-15%);
+        }
+    }
+}
+
+
+/* -------  QUERIES ---------- */
+
+@media (min-width: 768px) {
+    .banner__button {
+        top: 90%
+    }
+
+    .main-background {
+        background-attachment: fixed;
+    }
+
+    .banner__image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        object-fit: contain;
+
+
+    }
+
+    .parallax {
+        height: 80vh;
+        background-image: url('../images/puente.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .parallax::before {
+        display: none;
+    }
+    .swiper__title {
+        font-size: 2rem ;     
+    }
+
+    .swiper__description {
+        font-size: 1.5rem ;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .parallax {
+        height: 70vh;
+        width: 100%;
+        overflow-x: hidden;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .separator {
+        margin-top: 0;
+        width: 100%; 
+        height: 4px;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+
+  
+
+
+
+    .swiper__image {
+        width: 70%;
+        max-width: 450px ;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        object-fit: contain;
+    }
+    /* --- WEBKIT --- */
+.swiper__container::-webkit-scrollbar {
+    height: 15px;
+    border-radius: 10px;
+    background: rgba(50, 30, 20, 0.6);
+    
+}
+
+.swiper__container::-webkit-scrollbar-track {
+    background: rgba(30, 20, 15, 0.8);
+    border-radius: 10px;
+}
+
+.swiper__container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ffcc66, #b8860b);
+    border-radius: 10px;
+   
+}
+
+.swiper__container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ffcc66, #ffd700);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+}
