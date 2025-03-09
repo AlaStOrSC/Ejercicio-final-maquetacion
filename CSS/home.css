@@ -287,7 +287,11 @@
     object-fit: contain;
 }
 
-
+.swiper__container::-webkit-scrollbar {
+    height: 0px;
+ 
+    
+}
 
 
 
